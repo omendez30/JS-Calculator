@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Javascript Calculator</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="calc-box">
+            <div class=input>
+                <form name="form">
+                    <input type="text" class="textview" id="display" name="textview">
+                    <input type="text" class="textview" id="display2" placeholder="0" name="text">
+                </form>
+            </div><br>
+            <table>
+                <tr>
+                    <td><input class="button" type="button" value="C" id="clear" onclick="clean()">
+                    </td>
+                    <td><input class="button" type="button" value="/" id="divide" onclick="insertNum('/')"></td>
+                    <td><input class="button" type="button" value="<" id="less-than" onclick="backSpace()">
+                    </td>
+                    <td><input class="button" value="=" type="button" id="equals" onclick="equal()"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="7" id="seven" onclick="insertNum(7)">
+                    </td>
+                    <td><input class="button" type="button" value="8" id="eight" onclick="insertNum(8)">
+                    </td>
+                    <td><input class="button" type="button" value="9" id="nine" onclick="insertNum(9)">
+                    </td>
+                    <td><input class="button" type="button" value="X" id="multiply" onclick="insertNum('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" id="four" onclick="insertNum(4)">
+                    </td>
+                    <td><input class="button" type="button" value="5" id="five" onclick="insertNum(5)">
+                    </td>
+                    <td><input class="button" type="button" value="6" id="six" onclick="insertNum(6)">
+                    </td>
+                    <td><input class="button" type="button" value="-" id="subtract" onclick="insertNum('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" id="one" onclick="insertNum(1)">
+                    </td>
+                    <td><input class="button" type="button" value="2" id="two" onclick="insertNum(2)">
+                    </td>
+                    <td><input class="button" type="button" value="3" id="three" onclick="insertNum(3)">
+                    </td>
+                    <td><input class="button" type="button" value="+" id="add" onclick="insertNum('+')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="." id="decimal" onclick="insertNum('.')">
+                    </td>
+                    <td colspan=3><input class="button" class="button" type="button" value="0" id="zero" onclick="insertNum(0)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

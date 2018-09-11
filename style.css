@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: grey;
+}
+.calc-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  border: 5px solid black;
+}
+.button {
+  background: #333300;
+  color: white;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 2px;
+  cursor: pointer;
+}
+
+#zero {
+  width: 160px;
+}
+#equals {
+  background: #ff0000;
+}
+.textview {
+  width: 217px;
+  border: none;
+  background: black;
+  color: white;
+  margin: 2px;
+}
+#display1 {
+  position: relative;
+  top: 0px;
+  border: none;
+}
+#display2 {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  border: none;
+}
